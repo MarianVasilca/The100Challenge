@@ -1,0 +1,24 @@
+Autor: Marian-Laurențiu Vasilca
+Problemă: Cel Mai Mare Divizor Comun
+
+Date de intrare:
+
+Datele de intrare se citesc din fișierul cmmdc.in:
+	* pe prima linie: un număr natural, a
+	* pe a doua linie: un număr natural b
+
+Date de ieșire:
+
+Datele de ieșire se tipăresc în fișierul cmmdc.out:
+	* pe prima linie: cel mai mare divizor comun pentru a și b. Dacă a și b sunt
+	prime între ele, atunci se va tipări 0.
+
+Implementare:
+Se deschid fișierele pentru citire și scriere, și se verifică dacă operația s-a
+realizat cu succes. Se citesc primele două linii și se verifică dacă operațiile
+s-au realizat cu succes. Se verifcă dacă liniile conțin sau nu numere.
+Se apelează funcția cmmdc care primește ca parametrii cele două numere citite
+din fișier.
+Funcția împarte deîmpărțitul la rest până când împărțitorul este 0, apoi
+returnează deîmpărțitul sau 0 dacă sunt prime între ele.
+Se scrie în fișierul de ieșire rezultatul și ambele fișiere se închid.
