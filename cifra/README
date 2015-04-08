@@ -1,0 +1,26 @@
+Autor: Marian-Laurențiu Vasilca
+Problemă: Cifră
+
+Enunț:
+Pentru o valoarea N data trebuie sa determine ultima cifra a sumei 
+1^1 + 2^2 + ... + N^N.
+
+Date de intrare:
+Pe prima linie din fișierul cifra.in se va afla numărul T. Pe urmatoarele 
+T linii se vor găsi valori ale lui N pentru care trebuie găsit răspunsul.
+
+Date de ieșire:
+Pe cele T linii ale fișierului cifra.out se vor găsi răspunsurile pentru
+valorile lui N date în fișierul de intrare.
+
+Restricții:
+1 <= T <= 30.000
+1 <= N <= 10^100. Numerele sunt citite ca șiruri de caractere.
+
+În funcția main se deschid fișierele de intrare și de ieșire, și se verifică
+dacă operațiile s-au realizat cu succes. Se calculează ultima cifră pentru
+primii 100 de termeni cu ajutorul funcției set_double_vector(). Dacă se știu
+acești termeni atunci se poate determina orice alt termen. Această funcție se
+folosește de funcția get_power() care calculează ultima cifră pentru formula
+T^T. Pentru o scriere mai rapidă în fișier, toate rezultatele se scriu într-un
+buffer iar apoi acest buffer este scris în fișier.
